@@ -23,7 +23,7 @@ Benefits:
   * Source information
   * FREE API access
 
-*Each API is limited to 50 searches per month. You can upgrade your API anytime by visiting* [Breachdirectory API Upgrade](https://rapidapi.com/rohan-patra/api/breachdirectory/pricing)
+*Each FREE API is limited to 50 searches per month. You can upgrade your API anytime by visiting* [Breachdirectory API Upgrade](https://rapidapi.com/rohan-patra/api/breachdirectory/pricing)
 
 
 #
