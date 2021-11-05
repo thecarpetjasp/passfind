@@ -4,7 +4,7 @@ A python program capable of accessing passwords associated with emails through l
 #
 
 A python program capable of accessing passwords associated with emails through leaked databases. Input any email address into passfind to find leaked passwords associated with the account.
-*All credit for accessing these databases goes to:* breachdirectory.org
+*All credit for accessing these databases goes to:* [breachdirectory.org]
 
 
 #
