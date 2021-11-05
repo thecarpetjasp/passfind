@@ -60,3 +60,7 @@ Head on over to [https://rapidapi.com/rohan-patra/api/breachdirectory](https://r
 Once your account is set up, head back to [https://rapidapi.com/rohan-patra/api/breachdirectory](https://rapidapi.com/rohan-patra/api/breachdirectory) and click on **subscribe**. Once you've subscribed, your API key should now be valid. You API key can be found under **GET Index** labelled *X-RapidAPI-Key*. You can copy your API on the right hand side of the page under **Code Snippet** where once again it is labelled *X-RapidAPI-Key*.
 
 
+
+Now all thats left to do is to apply your API to the program. You can do with `nano passfind.py` / `nano passfind`.
+
+*Remember, if you followed step (3) to 'INSTALL AND LAUNCH', then passfind.py will be stored at '/usr/bin/' - Full directory: '/usr/bin/passfind'.*
