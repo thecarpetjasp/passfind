@@ -58,7 +58,7 @@ or if you followed step (3):
 
 Before you can begin using PassFind - you will need BreachDirectory's FREE API key.
 
-Head on over to [https://rapidapi.com/rohan-patra/api/breachdirectory](https://rapidapi.com/rohan-patra/api/breachdirectory) or visit [breachdirectory.org](https://breachdirectory.org) and go to API. From there, create your free account.
+Head on over to [https://rapidapi.com/rohan-patra/api/breachdirectory](https://rapidapi.com/rohan-patra/api/breachdirectory) or visit [breachdirectory.org](https://breachdirectory.org) and click API. From there, create your free account.
 
 Once your account is set up, head back to [https://rapidapi.com/rohan-patra/api/breachdirectory](https://rapidapi.com/rohan-patra/api/breachdirectory) and click on **subscribe**. Once you've subscribed, your API key should now be valid. You API key can be found under **GET Index** labelled *X-RapidAPI-Key*. You can copy your API on the right hand side of the page under **Code Snippet** where once again it is labelled *X-RapidAPI-Key*.
 
