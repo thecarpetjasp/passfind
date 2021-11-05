@@ -7,6 +7,16 @@ A python program capable of accessing passwords associated with emails through l
 *All credit for accessing these databases goes to:* [breachdirectory.org](https://breachdirectory.org)
 
 
+
+
+*Why would I need this program?*
+Passfind is a great way to experience all the perks that breachdirectory.org has to offer. Searches made on breachdirectory are limited to semi-clear text passwords. Thankfully a hash is provided, which wlll allow you to crack and access the full clear text password for yourself. However, depending on the length of the password, what number of characters are already revealed to you and having to crack each one individually, this can be quite time consuming. Passfind utilies breachdirectory's API key which will give you **all** full clear text passwords, hashes and source of the leak in a matter of seconds. Just simply enter an email address and get your full results.
+
+Benefits:
+  full
+*Each API is limited to 50 searches per month.*
+
+
 #
 
 
