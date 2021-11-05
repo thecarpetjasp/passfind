@@ -61,6 +61,6 @@ Once your account is set up, head back to [https://rapidapi.com/rohan-patra/api/
 
 
 
-Now all thats left to do is to apply your API to the program. You can do so with `nano passfind.py` / `nano passfind` and entering your API key into the variable below the note # ENTER YOUR API KEY BELOW.
+Now all thats left to do is to apply your API to the program. You can do so with `nano passfind.py` / `nano passfind` and entering your API key into the variable below the note #ENTER YOUR API KEY BELOW.
 
 *Remember, if you followed step (3) to 'INSTALL AND LAUNCH', then passfind.py will be stored at '/usr/bin/' - Full directory: '/usr/bin/passfind'.*
