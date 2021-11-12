@@ -79,7 +79,7 @@ Now all thats left to do is to apply your API to the program. You can do so with
 
 
 
-**UPDATE**
+**(NEW UPDATE) *PASSCRACK INTRODUCTION***
 
 PASSFIND is now introducing it's new feature; PASSCRACK!
 
