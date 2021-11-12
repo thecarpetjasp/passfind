@@ -72,3 +72,28 @@ Once your account is set up, head back to [https://rapidapi.com/rohan-patra/api/
 Now all thats left to do is to apply your API to the program. You can do so with `nano passfind.py` / `nano passfind` and entering your API key into the variable below the note #ENTER YOUR API KEY BELOW.
 
 *Remember, if you followed step (3) to 'INSTALL AND LAUNCH', then passfind.py will be stored at '/usr/bin/' - Full directory: '/usr/bin/passfind'.*
+
+
+
+#
+
+
+
+**UPDATE**
+
+PASSFIND is now introducing it's new feature; PASSCRACK!
+
+PASSCRACK does not depend on any API key whatsoever. So if you find yourself out of all 50 queries for the month, PASSCRACK will immediately take action.
+
+Yes, this means PASSCRACK is unlimited! There is a price to pay, however. Each password must be cracked individually, there is no way to access clear text passwords all at once. Each password can take anywhere from 10 seconds to a 1 minute to crack. No source information is available for any cracked password.
+
+To get started, head on over to [breachdirectory.org](https://breachdirectory.org) and input your email to receive your censored passwords and their encrypted SHA-1 hash versions. That's all PASSCRACK needs! Just input the censored password you wish to crack, followed by it's SHA-1 hash and let PASSCRACK do it's job.
+
+WE HIGHLY RECOMMEND USING [weleakinfo.to](https://weleakinfo.to) IF CENSORED PASSWORDS HAVE MORE THAN 4 CHARACTERS HIDDEN. UNLESS YOU HAVE THE COMPUTING POWER TO DO SO, THEN PASSCRACK WILL GIVE YOU THE CHOICE. WELEAKINFO DISPLAY SAME EXACT CENSORED PASSWORDS IN EXACT SAME ORDER AND ONLY CENSOR THE LAST 4 CHARACTERS. PLEASE ALWAYS USE THE HASH PROVIDED TO YOU BY BREACHDIRECTORY!
+
+
+![passcrack_intro](https://user-images.githubusercontent.com/71789855/141419655-1397bff1-2f94-4aac-974a-e3bf790bb1e9.png)
+
+![cracked_result](https://user-images.githubusercontent.com/71789855/141419650-939bb79a-b5c0-4afc-a2d7-fc1fe81becde.jpg)
+
+*PASSCRACK is currently exclusive to Linux users only. A Windows update will be coming shortly!*
