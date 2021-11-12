@@ -25,6 +25,7 @@ Benefits:
 
 *Each FREE API is limited to 50 searches per month. You can upgrade your API anytime by visiting* [Breachdirectory API Upgrade](https://rapidapi.com/rohan-patra/api/breachdirectory/pricing)
 
+#
 
 
 
@@ -91,9 +92,12 @@ To get started, head on over to [breachdirectory.org](https://breachdirectory.or
 
 WE HIGHLY RECOMMEND USING [weleakinfo.to](https://weleakinfo.to) IF CENSORED PASSWORDS HAVE MORE THAN 4 CHARACTERS HIDDEN. UNLESS YOU HAVE THE COMPUTING POWER TO DO SO, THEN PASSCRACK WILL GIVE YOU THE CHOICE. WELEAKINFO DISPLAY SAME EXACT CENSORED PASSWORDS IN EXACT SAME ORDER AND ONLY CENSOR THE LAST 4 CHARACTERS. PLEASE ALWAYS USE THE HASH PROVIDED TO YOU BY BREACHDIRECTORY!
 
+#
 
 ![passcrack_intro](https://user-images.githubusercontent.com/71789855/141419655-1397bff1-2f94-4aac-974a-e3bf790bb1e9.png)
 
+#
 ![cracked_result](https://user-images.githubusercontent.com/71789855/141419650-939bb79a-b5c0-4afc-a2d7-fc1fe81becde.jpg)
 
+#
 *PASSCRACK is currently exclusive to Linux users only. A Windows update will be coming shortly!*
