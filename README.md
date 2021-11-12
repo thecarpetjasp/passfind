@@ -26,6 +26,11 @@ Benefits:
 *Each FREE API is limited to 50 searches per month. You can upgrade your API anytime by visiting* [Breachdirectory API Upgrade](https://rapidapi.com/rohan-patra/api/breachdirectory/pricing)
 
 
+
+
+![found_passwords](https://user-images.githubusercontent.com/71789855/141419652-6a8236a9-1f12-4d26-8a7b-3097d6cec5af.jpg)
+
+
 #
 
 
