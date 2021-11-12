@@ -88,7 +88,7 @@ PASSCRACK does not depend on any API key whatsoever. So if you find yourself out
 
 Yes, this means PASSCRACK is unlimited! There is a price to pay, however. Each password must be cracked individually, there is no way to access clear text passwords all at once. Each password can take anywhere from 10 seconds to a 1 minute to crack. No source information is available for any cracked password.
 
-To get started, head on over to [breachdirectory.org](https://breachdirectory.org) and input your email to receive your censored passwords and their encrypted SHA-1 hash versions. That's all PASSCRACK needs! Just input the censored password you wish to crack, followed by it's SHA-1 hash and let PASSCRACK do it's job.
+To get started, head on over to [breachdirectory.org](https://breachdirectory.org) and input the target email to receive your censored passwords and their encrypted SHA-1 hash versions. That's all PASSCRACK needs! Just input the censored password you wish to crack, followed by it's SHA-1 hash and let PASSCRACK do it's job.
 
 We highly recommend using [weleakinfo.to](https://weleakinfo.to) if censored characters exceed more than 4 characters long. Unless you have the computing power and the storage to execute such a big task, then PASSCRACK will give you the choice to do so. Weleakinfo display the same censored passwords in exact same order, except they always only censor the last 4 characters. Please always use the hash provided to you by Breachdirectory.
 
