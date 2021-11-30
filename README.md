@@ -86,7 +86,7 @@ PASSFIND is now introducing it's new feature; PASSCRACK!
 
 PASSCRACK does not depend on any API key whatsoever. So if you find yourself out of all 50 queries for the month, PASSCRACK will immediately take action.
 
-Yes, this means PASSCRACK is unlimited! There is a price to pay, however. Each password must be cracked individually, there is no way to access clear text passwords all at once. Each password can take anywhere from 10 seconds to a 1 minute to crack. No source information is available for any cracked password.
+Yes, this means PASSCRACK is unlimited! There is a price to pay, however. Each password must be cracked individually, there is no way to access clear text passwords all at once. Each password can take anywhere from 1 minute to several hours to crack. No source information is available for any cracked password.
 
 To get started, head on over to [breachdirectory.org](https://breachdirectory.org) and input the target email to receive your censored passwords and their encrypted SHA-1 hashes. That's all PASSCRACK needs! Just input the censored password you wish to crack, followed by it's SHA-1 hash and let PASSCRACK do it's job.
 
