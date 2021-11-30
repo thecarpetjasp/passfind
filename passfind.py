@@ -8,8 +8,8 @@ import platform
 from colorama import Fore, Style
 
 class color:
-	BOLD = '\033[1m'
-	END = '033[0m'
+        BOLD = '\033[1m'
+        END = '033[0m'
 
 # ENTER YOUR API KEY BELOW
 API_KEY = ("")
@@ -41,21 +41,21 @@ skip_choice = 0
 passcrack_start = 0
 passfind_start = 0
 if API_KEY == (""):
-	print ("\nLooks like you don't have an API key!\n")
-	time.sleep(2)
-	print ("Redirecting you to PASSCRACK instead...")
-	time.sleep(1)
-	countdown_int = 4
-	for countdown in range(1, 4):
-		countdown_int = (countdown_int - 1)
-		if countdown_int == 3:
-			print ("..." + str(countdown_int))
-			time.sleep(1)
-		else:
-			print ("..." + str(countdown_int))
-			time.sleep(1)
-	passcrack_start = 1
-	skip_choice = 1
+        print ("\nLooks like you don't have an API key!\n")
+        time.sleep(2)
+        print ("Redirecting you to PASSCRACK instead...")
+        time.sleep(1)
+        countdown_int = 4
+        for countdown in range(1, 4):
+                countdown_int = (countdown_int - 1)
+                if countdown_int == 3:
+                        print ("..." + str(countdown_int))
+                        time.sleep(1)
+                else:
+                        print ("..." + str(countdown_int))
+                        time.sleep(1)
+        passcrack_start = 1
+        skip_choice = 1
 if skip_choice == 0:
         print ("\nSelect a service to use:\n")
         print (Fore.RED + "[" + Fore.YELLOW + "1" + Fore.RED + "] " + Style.RESET_ALL + "PASSFIND")
@@ -162,7 +162,7 @@ if passcrack_start == 1:
                 print ("Please visit " + Fore.YELLOW + "breachdirectory.org " + Style.RESET_ALL + "and input the email address to get all censored passwords and their hashes.")
                 print ("Copy and paste " + Fore.GREEN + "1 " + Style.RESET_ALL + "censored password and it's designated SHA-1 hash below to crack.\n\n\n\n\n\n\n\n\n\n")
                 known_char_input1 = input("Input the censored password: ")
-                known_char_input = known_char_input1.replace(" ", "")
+                known_char_input = known_char_input1.replace("	", "")
                 known_char_list = (split(known_char_input))
                 star_count = 0
                 known_char = ("")
@@ -260,6 +260,42 @@ if passcrack_start == 1:
                                         print ("PASSWORD FOUND: " + color.BOLD + final + Style.RESET_ALL)
                                         end = 1
                                 elif result == 0:
-                                        print (Fore.RED + "Password could not be cracked!" + Style.RESET_ALL)
-                                        end = 1
+                                        print (Fore.RED + "Password could not be cracked!" + Style.RESET_ALL + "\n\nCreating a stronger dictionary with 100% guarantee.")
+                                        print ("\n*These dictionaries take up a lot more storage. Precise Storage capacity will be displayed.*")
+                                        to_continue = input("\nPress enter to continue...")
+                                        end = 2
+                                        create = 0
+                                        cracking = 0
+                                        crunch_command = ("crunch " + str(len(known_char_list)) + " " + str(len(known_char_list)) + " \"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',''.'' ''/''\\\\''|''<''>''?'';''#'':''~'\\\"'\\\"'@''['']''{''}''=''-''+''_'')''(''*''&''^''%''$''£''\\\"''!'\" -t " + crunch_input + " -o pass | python -c 'import os; from colorama import Fore, Style; os.system(\"clear\"); print (\"CRACKING THE PASSWORD!\"); print(\"\"); print (Fore.RED + \"Do NOT close the program! Please be patient.\" + Style.RESET_ALL); print(\"\"); print(\"\"); print (Fore.YELLOW + \"Creating a password dictionary...\" + Style.RESET_ALL); print (\"Press Enter to continue...\")'")
+                                        while end == 2:
+                                                os.system("cls||clear")
+                                                print ("CRACKING THE PASSWORD!\n")
+                                                print (Fore.RED + color.BOLD + "Do NOT close the program! Please be patient.\n\n" + Style.RESET_ALL)
+                                                if create == 0:
+                                                        time.sleep(2)
+                                                if create == 0:
+                                                        create = 1
+                                                        print (Fore.YELLOW + "Creating a password dictionary..." + Style.RESET_ALL)
+                                                        os.system(crunch_command)
+                                                elif create == 1: 
+                                                        cracking = (cracking + 1)
+                                                        print (Fore.GREEN + "Password dictionary successfully created!\n" + Style.RESET_ALL)
+                                                        if cracking == 1:
+                                                                time.sleep(1)
+                                                                print (Fore.YELLOW + "Cracking the password..." + Style.RESET_ALL)
+                                                                os.system("john hash --format=raw-sha1 --wordlist=pass > grep.txt 2>&1")
+                                                                grepped = os.popen("grep '(?)' grep.txt").read()
+                                                                final = grepped.replace("(?)", "")
+                                                                if final != (""):
+                                                                        result = 1
+                                                                else:
+                                                                        result = 0
+                                                        elif cracking == 2:
+                                                                if result == 1:
+                                                                        print (Fore.GREEN + "Password sucessfully cracked!\n\n" + Style.RESET_ALL)
+                                                                        print ("PASSWORD FOUND: " + color.BOLD + final + Style.RESET_ALL)
+                                                                        end = 1
+                                                                elif result == 0:
+                                                                        print (Fore.RED + "Password could not be cracked!" + Style.RESET_ALL)
+                                                                        end = 1
         os.system("rm grep.txt & rm hash & rm pass")
