@@ -62,6 +62,8 @@ or if you followed step (3):
 
 **SETUP**
 
+*(NOTICE!) A recent update to BreachDirectory has affected the use of their API keys. Until this is resolved, please continue to use the PASSCRACK feature for this program instead.* 
+
 Before you can begin using PassFind - you will need BreachDirectory's FREE API key.
 
 Head on over to [https://rapidapi.com/rohan-patra/api/breachdirectory](https://rapidapi.com/rohan-patra/api/breachdirectory) or visit [breachdirectory.org](https://breachdirectory.org) and click API. From there, create your free account.
