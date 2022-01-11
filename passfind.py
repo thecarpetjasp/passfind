@@ -40,6 +40,23 @@ print ("\/_/    " + Fore.YELLOW + " /_/  /_/ |_/___/___/ /_/ /___/_/|_/____/ " +
 skip_choice = 0
 passcrack_start = 0
 passfind_start = 0
+passfind_down = 1
+if passfind_down == 1:
+        print ("\nPASSFIND is currently unavailable!\n")
+        time.sleep(2)
+        print ("Redirecting you to PASSCRACK instead...")
+        time.sleep(1)
+        countdown_int = 4
+        for countdown in range(1, 4):
+                countdown_int = (countdown_int - 1)
+                if countdown_int == 3:
+                        print ("..." + str(countdown_int))
+                        time.sleep(1)
+                else:
+                        print ("..." + str(countdown_int))
+                        time.sleep(1)
+        passcrack_start = 1
+        skip_choice = 1
 if API_KEY == (""):
         print ("\nLooks like you don't have an API key!\n")
         time.sleep(2)
