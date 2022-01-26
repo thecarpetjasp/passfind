@@ -57,7 +57,7 @@ if passfind_down == 1:
                         time.sleep(1)
         passcrack_start = 1
         skip_choice = 1
-if API_KEY == (""):
+if API_KEY == ("") and passfind_down == 0:
         print ("\nLooks like you don't have an API key!\n")
         time.sleep(2)
         print ("Redirecting you to PASSCRACK instead...")
