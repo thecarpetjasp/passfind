@@ -9,7 +9,7 @@ from colorama import Fore, Style
 
 class color:
         BOLD = '\033[1m'
-        END = '033[0m'
+        END = '\033[0m'
 
 # ENTER YOUR API KEY BELOW
 API_KEY = ("")
@@ -36,11 +36,11 @@ print ("   / / /")
 print ("  / / / " + Fore.YELLOW + "    ___  ___   ________  _________  _____" + Style.RESET_ALL)
 print (" / / /  " + Fore.YELLOW + "   / _ \\/ _ | / __/ __/ / __/  _/ |/ / _ \\" + Style.RESET_ALL)
 print ("/ / /   " + Fore.YELLOW + "  / ___/ __ |_\\ \\_\\ \\  / _/_/ //    / // /" + Style.RESET_ALL)
-print ("\/_/    " + Fore.YELLOW + " /_/  /_/ |_/___/___/ /_/ /___/_/|_/____/ " + Style.RESET_ALL)
+print ("\/_/    " + Fore.YELLOW + " /_/  /_/ |_/___/___/ /_/ /___/_/|_/____/ " + Style.RESET_ALL + "by " + Fore.YELLOW + color.BOLD + "thecarpetjasp" + Style.RESET_ALL + color.END)
 skip_choice = 0
 passcrack_start = 0
 passfind_start = 0
-passfind_down = 1
+passfind_down = 0
 if passfind_down == 1:
         print ("\nPASSFIND is currently unavailable!\n")
         time.sleep(2)
@@ -107,16 +107,23 @@ if passfind_start == 1:
         print ("  / / / " + Fore.YELLOW + "    ___  ___   ________  _________  _____" + Style.RESET_ALL)
         print (" / / /  " + Fore.YELLOW + "   / _ \\/ _ | / __/ __/ / __/  _/ |/ / _ \\" + Style.RESET_ALL)
         print ("/ / /   " + Fore.YELLOW + "  / ___/ __ |_\\ \\_\\ \\  / _/_/ //    / // /" + Style.RESET_ALL)
-        print ("\/_/    " + Fore.YELLOW + " /_/  /_/ |_/___/___/ /_/ /___/_/|_/____/ " + Style.RESET_ALL)
-        url = "https://breachdirectory.p.rapidapi.com/"
-        email_input = input("\nEnter email address: ")
+        print ("\/_/    " + Fore.YELLOW + " /_/  /_/ |_/___/___/ /_/ /___/_/|_/____/ " + Style.RESET_ALL + "by " + Fore.YELLOW + color.BOLD + "thecarpetjasp" + Style.RESET_ALL + color.END)
+        term = input("\nEnter email address: ")
         print ("\nRetrieving information...")
-        querystring = {"func":"auto","term":email_input}
+        func = ("auto")
+
+        url = "https://breachdirectory.p.rapidapi.com/"
+
+        querystring = {"func":func,"term":term}
+
         headers = {
             'x-rapidapi-host': "breachdirectory.p.rapidapi.com",
             'x-rapidapi-key': API_KEY
             }
+
+
         response = requests.request("GET", url, headers=headers, params=querystring)
+
         todos = json.loads(response.text)
         check_for_credit = (len(todos))
         if check_for_credit == 1:
@@ -138,32 +145,31 @@ if passfind_start == 1:
         if check_for_credit != 1:
                 counter = 0
                 try:
-                        for a in range(0, (len(todos['result']))):
-                                if counter == 0:
-                                        print("\n\nFOUND PASSWORDS:")
-                                        counter = 1
-                                found_password1 = (todos['result'][a]['has_password'])
-                                found_password = json.dumps(found_password1)
-                                if found_password == ("true"):
-                                        print (Fore.RED + "\n[", Fore.YELLOW, (a + 1), Fore.RED + "]", sep="", end=" ")
-                                        print (Style.RESET_ALL + color.BOLD + todos['result'][a]['password'], Style.RESET_ALL)
-                                else:
-                                        print (Fore.RED + "\n[", Fore.YELLOW, (a + 1), Fore.RED + "]", sep="", end=" ")
-                                        print (Style.RESET_ALL + "N/A")
-                        print("\n\nSOURCES:")
-                        for b in range(0, (len(todos['result']))):
-                                print (Fore.RED + "\n[", Fore.YELLOW, (b + 1), Fore.RED + "]", sep="", end=" ")
-                                print (Style.RESET_ALL, todos['result'][b]['sources'])
-                        print("\n\nSHA1 HASHES:")
-                        for c in range(0, (len(todos['result']))):
-                                found_password1 = (todos['result'][c]['has_password'])
-                                found_password = json.dumps(found_password1)
-                                if found_password == ("true"):
-                                        print (Fore.RED + "\n[", Fore.YELLOW, (c + 1), Fore.RED + "]", sep="", end=" ")
-                                        print (Style.RESET_ALL, todos['result'][c]['sha1'])
-                                else:
-                                        print (Fore.RED + "\n[", Fore.YELLOW, (c + 1), Fore.RED + "]", sep="", end=" ")
-                                        print (Style.RESET_ALL + "N/A")
+                        for passwords in range(0, len(todos['result'])):
+                                print(Fore.BLUE + "\n[", Fore.YELLOW + str(passwords + 1), Fore.BLUE + "]", sep="", end=" ")
+                                print(Fore.BLUE + "     password:", Fore.WHITE + todos['result'][passwords]['password'])
+                                print(Fore.RED + "        hash:", Fore.WHITE + todos['result'][passwords]['hash'])
+                                print(Fore.YELLOW + "        sources:", Fore.WHITE, todos['result'][passwords]['sources'], Style.RESET_ALL)
+
+
+                        print("\n\nFetching uncensored passwords...")
+
+                        if func == ("auto"):
+                                todos = json.loads(response.text)
+                                for a in range(0, len(todos['result'])):
+                                        hash_list = []
+                                        hash = (todos['result'][a]['hash'])
+                                        querystring = {"func":"dehash","term":hash}
+                                        headers = {
+                                                'x-rapidapi-host': "breachdirectory.p.rapidapi.com",
+                                                'x-rapidapi-key': API_KEY
+                                                }
+                                        response = requests.request("GET", url, headers=headers, params=querystring)
+                                        #print(response.text)
+                                        todos1 = json.loads(response.text)
+                                        time.sleep(2)
+                                        print(Fore.BLUE + "\n[", Fore.YELLOW + str(a + 1), Fore.BLUE + "]", Style.RESET_ALL, sep="", end=" ")
+                                        print(todos1['found'])
                 except KeyError:
                         print (Fore.RED + "\n\nNO RESULTS!" + Style.RESET_ALL)
 if passcrack_start == 1:
