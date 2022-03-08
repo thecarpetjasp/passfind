@@ -64,7 +64,7 @@ or if you followed step (3):
 
 *(NOTICE!) A recent update to BreachDirectory has effected the use of their API keys. Until this is resolved, please continue to use the PASSCRACK feature for this program instead.* 
 
-*(UPDATE!) A new update has been added to PassFind. You can now resume searching as usual. However, due to the changes that were made on BreachDirectory, each password that is cracked for you WILL be counted as a single search. So for 5 passwords cracked on a single email, will now be counted towards as 5 searches of your monthly searches. I wouldn't want to recommend finding a way to avoid paying for an API key... But, if these changes affect how much you get to use your free account, I would suggest just create multiple free accounts...*
+*(UPDATE!) A new update has been added to PassFind. You can now resume searching as usual. However, due to the changes that were made on BreachDirectory, each password that is cracked for WILL be counted as a single search. So, for 5 passwords cracked on a single email, will now be counted towards as 5 searches of your monthly searches. I wouldn't want to recommend finding a way to avoid paying for an API key... But, if these changes affect how much you get to use your free account, I would suggest creating multiple free accounts...*
 
 Before you can begin using PassFind - you will need BreachDirectory's FREE API key.
 
